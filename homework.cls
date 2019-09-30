@@ -154,7 +154,7 @@
     % Setup header
     \setlength{\headheight}{15.2pt}
     \setlength{\headsep}{0.2in}
-    \lhead{\hwclass{} \hwlecture\hwsection}%
+    \lhead{\hwclass{} \hwsection}%
     \chead{\hwname{} (\hwemail)}%
     \rhead{\hwtype{} \hwnum}%
 
@@ -166,11 +166,13 @@
     \thispagestyle{plain}
 
     \begin{center}
-      {\Large \hwclass{} \hwtype{} \hwnum}
+    {\Large \hwtype{} \hwnum}
+    
+	  {\Large \hwclass{} \hwsection}
 
       \hwname{} (\hwemail)
 
-      \today
+      \hwdate
     \end{center}
     \renewcommand{\headrulewidth}{0.4pt}
   }
@@ -183,11 +185,13 @@
 
     % Put header on it's own page
     \begin{center}
-      {\Large \hwclass{} \hwtype{} \hwnum}
+      {\Large \hwtype{} \hwnum}
+
+      {\Large \hwclass{} \hwsection}
 
       \hwname{} (\hwemail)
 
-      \today
+      \hwdate
     \end{center}
     \renewcommand{\headrulewidth}{0.4pt}
     \newpage
